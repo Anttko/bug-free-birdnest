@@ -1,6 +1,8 @@
-import { Card, CardBody, Heading, Stack, Box, Text, StackDivider } from '@chakra-ui/react'
-import { iDrone } from '../pages/interfaces/types'
 import React from "react";
+import { Card, CardBody, Heading, Stack, Box, Text, StackDivider } from '@chakra-ui/react'
+import { iDrone } from '../interfaces/types'
+import { format, parseISO } from 'date-fns'
+
 const DroneCard: React.FC<{ drone: iDrone }> = ({ drone }) => {
     const { serialNumber,
         timestamp,
@@ -24,10 +26,10 @@ const DroneCard: React.FC<{ drone: iDrone }> = ({ drone }) => {
                     </Box>
                     <Box>
                         <Heading size='xs' textTransform='uppercase'>
-                            Time
+                            Last seen by equipment
                         </Heading>
                         <Text pt='2' fontSize='sm'>
-                            {timestamp}
+                            {format(parseISO(timestamp), 'dd.MM.yyyy HH:mm:ss')}
                         </Text>
                     </Box>
                     <Box>
