@@ -11,9 +11,9 @@ const DroneCard: React.FC<{ drone: iDrone }> = ({ drone }) => {
         lastName,
         email,
         phoneNumber } = drone
+
     return (
         <Card>
-
             <CardBody>
                 <Stack divider={<StackDivider />} spacing='4'>
                     <Box>
@@ -54,9 +54,6 @@ const DroneCard: React.FC<{ drone: iDrone }> = ({ drone }) => {
                             {phoneNumber}
                         </Text>
                     </Box>
-
-
-
                 </Stack>
             </CardBody>
         </Card>
