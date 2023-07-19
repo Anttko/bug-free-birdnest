@@ -4,7 +4,7 @@
 Nextjs, with typescript, chakra-ui for some ui-elements. Used nextjs first time and wanted learn it. First I though of using nextjs for everything, but created extra backend for processing the data from external api. 
 
 deployed to fly.io: 
-[https://bug-free-birdnest.fly.dev/](https://bug-free-birdnest.fly.dev/)
+[https://birdnestfront.fly.dev/](https://birdnestfront.fly.dev/)
 
 
 ## Backend
